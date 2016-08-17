@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      {{ form_start(form) }}
+      <div class="col-md-6">
+
+        <div class="form-group">
+          {{ form_label(form.nom) }}
+          {{ form_widget(form.nom) }}
+          {{ form_errors(form.nom) }}
+        </div>
+
+        <div class="form-group">
+          {{ form_label(form.prenom) }}
+          {{ form_widget(form.prenom) }}
+          {{ form_errors(form.prenom) }}
+        </div>
+
+        <div class="form-group">
+          {{ form_label(form.email) }}
+          {{ form_widget(form.email) }}
+          {{ form_errors(form.email) }}
+        </div>
+
+        <div class="form-group">
+          {{ form_label(form.telephone) }}
+          {{ form_widget(form.telephone) }}
+          {{ form_errors(form.telephone) }}
+        </div>
+
+      </div>
+      <div class="col-md-6">
+
+        <div class="form-group">
+          {{ form_label(form.sujet) }}
+          {{ form_widget(form.sujet) }}
+          {{ form_errors(form.sujet) }}
+        </div>
+
+        <div class="form-group">
+          {{ form_label(form.message) }}
+          {{ form_widget(form.message) }}
+          {{ form_errors(form.message) }}
+        </div>
+
+        <input type="submit" value="Create" />
+
+        {{ form_end(form) }}
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3>COORDONNEES</h3>
+        <p>
+          <i class="fa fa-map-marker"></i> 7 rue des Violettes 97470, Saint-Benoit Ile de La Reunion.
+        </p>
+
+        <p>
+          <i class="fa fa-envelope"></i> locaestjlg@gmail.com
+        </p>
+
+        <p>
+          <i class="fa fa-mobile"></i> 0693 11 77 23
+        </p>
+      </div>
+
+      <div class="col-md-8">
+        <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=7%20rue%20des%20Violettes%2097470%2C%20Saint-Benoit&key=AIzaSyC06WVr_royNEQXXOoJKpol3y3uaLFZwqI" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

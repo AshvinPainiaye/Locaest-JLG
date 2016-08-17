@@ -1,0 +1,4 @@
+services:
+#    locaest_jlg.example:
+#        class: LocaestJLG\Bundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

@@ -1,0 +1,206 @@
+$couleur1: #0abbb5;
+
+.navbarFixed{
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+
+
+
+
+
+/* Debut logo */
+#logo{
+  img{
+    margin: 35px auto;
+  }
+}
+/* Fin logo */
+
+
+/* Debut navbar */
+.nav>li>a {
+  padding: 0;
+}
+
+.navbar{
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  z-index:9999;
+  .navbar-toggle{
+    float: left;
+    border: none;
+    .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #313131;
+    }
+  }
+}
+.navbar-collapse{
+  text-align: center;
+  .navbar-nav{
+    float:none;
+    display: inline-block;
+    li{
+      padding: 0 20px;
+      a{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: -5px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #313131;
+        font-weight: bold;
+        &:hover{
+          background-color: transparent;
+          color: $couleur1;
+          -o-transition: .3s;
+          -ms-transition: .3s;
+          -webkit-transition: .3s;
+          &::before{
+            left:0;
+            width: 100%;
+          }
+        }
+        &::before{
+          content:"";
+          position: absolute;
+          bottom: 15px;
+          transition: all .3s;
+          -o-transition: .3s;
+          -ms-transition: .3s;
+          -webkit-transition: .3s;
+          height: 2px;
+          width: 0;
+          left:50%;
+          background: $couleur1;
+        }
+        i{
+          margin-right: 6px;
+        }
+      }
+      .active{
+        color: $couleur1;
+      }
+    }
+  }
+}
+
+/* Fin navbar */
+
+/* Debut services */
+#services{
+  .hrTitre{
+    padding: 0;
+    border: none;
+    height: 5px;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+    &::after{
+      content: "\f005";
+      font-family: FontAwesome;
+      display: inline-block;
+      position: relative;
+      top: -.8em;
+      font-size: 2em;
+      padding: 0 .25em;
+      background-color: #fff;
+      color: #111;
+    }
+  }
+}
+/* Debut services */
+
+/* Debut vehicules */
+#vehicules{
+  .hrTitre{
+    padding: 0;
+    border: none;
+    height: 5px;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+    &::after{
+      content: "\f1b9";
+      font-family: FontAwesome;
+      display: inline-block;
+      position: relative;
+      top: -.8em;
+      font-size: 2em;
+      padding: 0 .25em;
+      background-color: #fff;
+      color: #111;
+    }
+  }
+}
+/* Debut vehicules */
+
+/* Debut contact */
+#contact{
+
+}
+/* Debut contact */
+
+/* Debut footer */
+footer{
+  background-color: #313131;
+  padding: 50px;
+  a{
+    color: #999999;
+    &:hover{
+      color: $couleur1;
+      text-decoration: none;
+    }
+  }
+  ul{
+    li{
+      padding: 0 15px !important;
+      a{
+        font-size:16px;
+        &:hover{
+          color: #fff;
+          text-decoration: none;
+          -o-transition: .1s;
+          -ms-transition: .1s;
+          -webkit-transition: .1s;
+        }
+        i{
+          width: 40px;
+          height: 40px;
+          line-height: 38px !important;
+          border-radius: 100%;
+          border: 1px solid #999;
+          display: inline-block;
+          &:hover{
+            background-color: $couleur1;
+            border: 1px solid $couleur1;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -webkit-transition: .5s;
+          }
+        }
+      }
+    }
+  }
+  hr{
+    height: 1px;
+    border:0;
+    background-color: #4A4A4A;
+    margin: 30px;
+  }
+  p{
+    color: #999999;
+    margin:0;
+  }
+}
+/* Fin footer */
