@@ -22,6 +22,7 @@ class ReservationType extends AbstractType
     ->add('telephone')
     ->add('vehicule', ChoiceType::class, array(
       'choices' => array(
+        '' => 'Selectionner un vehicule',
         'Audi A4' => 'Audi A4',
         'BMW Série 4 cabriolet' => 'BMW Série 4 cabriolet',
         'BMW Série 5' => 'BMW Série 5',
@@ -32,6 +33,7 @@ class ReservationType extends AbstractType
     ->add('depart')
     ->add('heure', ChoiceType::class, array(
       'choices' => array(
+        '' => 'Horraire',
         '08H00' => '08H00',
         '08H30' => '08H30',
         '09H00' => '09H00',
