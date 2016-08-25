@@ -12,7 +12,6 @@ use LocaestJLG\Bundle\Form\ContactType;
 
 class ContactController extends Controller
 {
-
   /**
   *
   * @Route("/contact", name="page_contact")
